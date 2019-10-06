@@ -1,15 +1,13 @@
 // copyright Charles Cooper 2019 - MIT license
 // https://adriann.github.io/programming_problems.html
-// Write a function that rotates a list by k elements. For example [1,2,3,4,5,6] rotated by two becomes [3,4,5,6,1,2]. Try solving this without creating a copy of the list. How many swap or move operations do you need?
+// Write a function that rotates a list by k elements. For example
+// [1,2,3,4,5,6] rotated by two becomes [3,4,5,6,1,2]. Try solving this
+// without creating a copy of the list. How many swap or move operations
+// do you need?
 
 // pointer to the list, length of the list, number of elements to rotate.
 // do it the naive way. k * len iterations.
 void rotate(int *list, int len, int k) {
-
-  // guard against OOB later.
-  if (len < 2) {
-    return;
-  }
 
   for (int j = 0; j < k; j++) {
 

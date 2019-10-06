@@ -21,18 +21,7 @@ void reverse(int *list, int len) {
 
 }
 
-// demo.
-#include <stdio.h>
-int print_array(int *array, int len) {
-  printf("[");
-  for (int i = 0; i < len - 1; i++) {
-    printf("%d,", array[i]);
-  }
-  if (len > 0) {
-    printf("%d", array[len - 1]);
-  }
-  printf("]\n");
-}
+#include "demo_util.h"
 int main(void) {
   int even_sized_list[10] = {1,2,3,4,5,6,7,8,9,10};
   reverse(even_sized_list, 10);

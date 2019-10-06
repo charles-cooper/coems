@@ -1,3 +1,4 @@
+// copyright 2019 Charles Cooper - MIT license
 // https://adriann.github.io/programming_problems.html
 // Write function that reverses a list, preferably in place.
 

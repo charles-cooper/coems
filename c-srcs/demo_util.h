@@ -1,3 +1,4 @@
+// copyright 2019 Charles Cooper - MIT license
 // demo.
 #include <stdio.h>
 int print_array(int *array, int len) {

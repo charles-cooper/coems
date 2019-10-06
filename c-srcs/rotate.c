@@ -18,11 +18,10 @@ void rotate(int *list, int len, int k) {
     // [ D, V, T ]
 
     int tmp = list[0]; // T to the side
-    int i;
-    for (i = 0; i < len - 1; i++) {
+    for (int i = 0; i < len - 1; i++) {
       list[i] = list[i + 1]; // move over!
     }
-    list[i] = tmp; // put T back in.
+    list[len - 1] = tmp; // put T back in.
   }
 }
 
@@ -72,11 +71,10 @@ void rotate_gcd(int *list, int len, int k) {
     // started.
     // note that in C, % is not mod but remainder, so for negative
     // arguments we need to use our mod function.
-    int i;
-    for (i = j; i != mod(j - k, len); i = mod(i + k, len)) {
+    for (int i = j; i != mod(j - k, len); i = mod(i + k, len)) {
       list[i] = list[mod(i + k, len)];
     }
-    list[i] = tmp;
+    list[mod(j - k, len)] = tmp;
 
   }
 }
